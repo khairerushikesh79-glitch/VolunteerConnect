@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolunteerConnect | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f8f4;
+            color: #26352a;
+        }
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        .logo {
+            color: #285c3b;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #26352a;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #3c8c5a;
+        }
+
+        .login-btn {
+            background: #285c3b;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+        }
+
+        .hero {
+            min-height: 520px;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(120deg, #e6ede5, #f7f8f4);
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #285c3b;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            background: #285c3b;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .primary-btn:hover,
+        .login-btn:hover {
+            background: #3c8c5a;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 45px 7%;
+            background: white;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .stats h2 {
+            color: #285c3b;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #285c3b;
+            margin-bottom: 18px;
+        }
+
+        .section p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px #0000000c;
+        }
+
+        .card h3 {
+            color: #285c3b;
+            margin-bottom: 12px;
+        }
+
+        .problem-section {
+            background: #e6ede5;
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .problem-section h2 {
+            color: #285c3b;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #285c3b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">VolunteerConnect</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#opportunities">Opportunities</a>
+            <a href="#community">Community</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Be the Change.<br>Make a Difference.</h1>
+
+            <p>
+                Connect with NGOs, discover volunteering opportunities
+                and help solve real community problems.
+                Every small action creates a better tomorrow.
+            </p>
+
+            <a href="register.html" class="primary-btn">
+                Join as Volunteer
+            </a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div>
+            <h2>55</h2>
+            <p>Survey Responses</p>
+        </div>
+
+        <div>
+            <h2>32</h2>
+            <p>No Previous Volunteering Experience</p>
+        </div>
+
+        <div>
+            <h2>36</h2>
+            <p>Interested in Hour Tracking</p>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2>About VolunteerConnect</h2>
+
+        <p>
+            VolunteerConnect is a smart platform that connects students,
+            citizens and NGOs. It helps people discover activities,
+            report community problems and contribute towards society.
+        </p>
+    </section>
+
+    <section class="section" id="opportunities">
+        <h2>Explore Opportunities</h2>
+        <p>Choose how you want to make a difference.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Education</h3>
+                <p>Help students learn and grow through educational activities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Environment</h3>
+                <p>Participate in tree plantation and environmental campaigns.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cleanliness</h3>
+                <p>Join cleanliness drives and improve public spaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="problem-section" id="community">
+        <h2>Report a Community Problem</h2>
+
+        <p>
+            Help your community by reporting cleanliness,
+            water supply and other public facility problems.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 VolunteerConnect. All Rights Reserved.</p>
+        <p>One Platform. Many Helping Hands.</p>
+    </footer>
+
+</body>
+</html>
